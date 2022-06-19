@@ -18,5 +18,5 @@ To prepare for coding interviews, consistent practise is the key. However, it ca
 
 ## TODO
 Create a text file that :
- - [ ] Saves the user preferred language and comment syntax
+ - [x] Saves the user preferred language and comment syntax
  - [ ] Create the function for the problem to be solved
