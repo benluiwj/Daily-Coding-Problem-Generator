@@ -75,8 +75,21 @@ def get_latest_problem():
 
 
 if __name__ == '__main__':
-        file_type = input('Please input in your langauge file extension (.py for python, .java for java, etc): \n')
-        comment_token = input('Please input in your language comment style (# for python, // for java, etc): \n')
+        
+        if not os.path.exists('settings.txt'):
+                print("Creating settings file...")
+                file_type = input('Please input in your langauge file extension (.py for python, .java for java, etc): \n')
+                comment_token = input('Please input in your language comment style (# for python, // for java, etc): \n')
+                settings = str(file_type) + " " + str(comment_token)
+                
+                with open('Settings.txt', 'w') as f:
+                        f.write(settings)
+        
+        else:
+                print("Reading from settings file")
+                f = open('Settings.txt', "r")
+                file_type, comment_token = f.readline().split()
+        
         question, question_num = get_latest_problem()
         question_num += file_type
         commented_out_question = ""
