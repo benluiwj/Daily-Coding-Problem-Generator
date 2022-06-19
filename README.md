@@ -12,7 +12,7 @@ To prepare for coding interviews, consistent practise is the key. However, it ca
 1. Clone this repository.
 2. Create a label 'Daily Coding Problem' in your gmail account. This label should tag all the emails sent by the mailing list.
 3. Follow the settings as seen in this image for the settings of the filter
-![](label filter.png)
+![](/label%20filter.png)
 4. Follow the instructions [here](https://developers.google.com/gmail/api/guides/quickstarts-overview) to set up the Gmail api. This should also set up the necessary configuration and token json files.
 5. Run `python3 problemGenerator.py`
 
